@@ -1,0 +1,69 @@
+<html>
+<head>
+    <script src="https://js.pusher.com/5.0/pusher.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+
+        @-webkit-keyframes moveUpClass0 {
+            0% {
+                opacity: 0;
+            }
+            35% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @font-face {
+            font-family: 'gisbon';
+            src: url('font/sparkle_dream-webfont.woff2') format('woff2'),
+            url('font/sparkle_dream-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        #Container {
+            vertical-align: top;
+            display: inline-block;
+            width: 600px;
+        }
+
+        .Text0, .Text1, .Text2, .UserPicture {
+            font-size: 35px;
+            letter-spacing: 1px;
+            color: #FF0000;
+            font-weight: 700;
+            text-decoration: none;
+            font-style: normal;
+            font-variant: normal;
+            text-transform: none;
+
+            display: block;
+            animation-duration: 5s;
+        }
+        #UserPicture{
+            border-radius: 10px;
+            animation-name: moveUpClass0;
+            animation-duration: 5s;
+        }
+            /*TODO We can set here the classnames and animation times */
+            .Text0 {
+                animation-name: moveUpClass0;
+            }
+
+
+    </style>
+</head>
+<body onload="RunCode();">
+<div id="Container"></div>
+	<button onclick="AddFan();">Add FanEvent</button>
+	<button onclick="AddInvite();">Add InviteEvent</button>
+	<button onclick="AddMoment();">Add MomentEvent</button>
+</body>
+</html>

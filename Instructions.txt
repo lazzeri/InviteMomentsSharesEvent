@@ -1,0 +1,8 @@
+1: Unpack zip file and put the folder wherever you want
+2: Open the Overlay with Google Chrome
+3: Copy the url and close
+4: Go into obs, create a new source -> choose browser
+5: paste the url into the URL part
+6: take care that the local file checkbox is UNCHECKED
+7: Delete all content in CustomCss
+8: Press Okay
